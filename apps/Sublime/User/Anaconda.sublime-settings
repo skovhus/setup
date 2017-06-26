@@ -1,0 +1,4 @@
+{
+    "anaconda_linting": true,
+    "pep8_max_line_length": 100
+}

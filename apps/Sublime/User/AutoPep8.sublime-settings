@@ -1,0 +1,34 @@
+{
+    "max-line-length": 79,
+
+    // list codes for fixes; used by --ignore and --select
+    "list-fixes": "",
+
+    // do not fix these errors / warnings(e.g. E4, W)
+    "ignore": "E24, E226",
+
+    // select errors / warnings(e.g. E4, W)
+    "select": "",
+
+    // enable possibly unsafe changes (E711, E712)
+    "aggressive": 1,
+
+    // number of spaces per indent level
+    "indent-size": 4,
+
+    "format_on_save": false,
+    "show_output_panel": true,
+    // Format/Preview menu items only appear for views
+    // with syntax from `syntax_list`
+    // value is base filename of the .tmLanguage syntax files
+    "syntax_list": ["Python"],
+
+    // Behaviour for right click context menu (Format/Preview PEP8)
+    // "always": menu appears always, even folder doesn't contain *.py files
+    // "never":  menu never appears
+    // "ifneed": menu appears only if path or childs contain *.py file
+    "file_menu_behaviour": "ifneed",
+    "file_menu_search_depth": 3, // max search depth, uses for 'ifneed' mode
+
+    "avoid_new_line_in_select_mode": false
+}

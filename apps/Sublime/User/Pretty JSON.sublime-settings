@@ -1,0 +1,6 @@
+{
+    "use_entire_file_if_no_selection" : true,
+    "indent" : 4,
+    "sort_keys" : true,
+    "ensure_ascii" : false
+}

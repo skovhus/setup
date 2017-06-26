@@ -1,0 +1,12 @@
+[alias]
+    push = push -u
+[user]
+    name = skovhus
+    email =
+[push]
+    default = current
+    followTags = true
+[core]
+    editor = nano
+[git-up "fetch"]
+    prune = true

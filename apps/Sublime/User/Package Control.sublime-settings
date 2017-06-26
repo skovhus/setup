@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoPEP8",
+		"Babel",
+		"Babel Snippets",
+		"CSS Extended Completions",
+		"Cucumber",
+		"EJS",
+		"Elm Language Support",
+		"Extract Sublime Package",
+		"FlowIDE",
+		"Gherkin (Cucumber) Formatter",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"Javascript Beautify",
+		"LoremGibson",
+		"Makefile Improved",
+		"Markdown Preview",
+		"Package Control",
+		"Pretty JSON",
+		"Sass",
+		"SassBeautify",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-sass-lint",
+		"SublimeLinter-flow",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pylint",
+		"Terminal",
+		"Theme - Soda SolarizedDark",
+		"Theme - Sodarized",
+		"Theme - Spacegray",
+		"Vuejs Snippets"
+	]
+}

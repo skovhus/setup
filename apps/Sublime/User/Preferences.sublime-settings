@@ -1,0 +1,29 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Solarized Skovhus (SL).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "menlo",
+	"font_size": 10,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"AutoPEP8",
+		"HTML",
+		"Makefile",
+		"SublimeLinter-contrib-sass-lint",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pylint",
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log"
+	],
+	"rulers":
+	[
+		100
+	],
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
