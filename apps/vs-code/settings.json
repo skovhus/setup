@@ -1,15 +1,26 @@
 {
+    "cSpell.enabledLanguageIds": [
+        "markdown"
+    ],
     "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New'",
     "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "none",
+    "editor.scrollBeyondLastLine": false,
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Monokai", // Monokai, Nord
     "workbench.editor.showTabs": true,
     "workbench.welcome.enabled": false,
     "flow.useNPMPackagedFlow": true,
-    "javascript.validate.enable": false // Flow
-    // "files.associations": { "*.js": "flow" }
+    "javascript.validate.enable": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript"
+    ]
 }
