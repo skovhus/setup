@@ -1,8 +1,11 @@
 [alias]
     push = push -u
+    up = pull --rebase --autostash
+    set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    pull-changes = git pull --rebase origin master
 [user]
     name = skovhus
-    email =
+    email = FILL
 [push]
     default = current
     followTags = true
