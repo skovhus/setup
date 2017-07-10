@@ -22,5 +22,17 @@
         "javascript",
         "javascriptreact",
         "typescript"
-    ]
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/android/app/build": true,
+        "**/ios/build": true,
+        "**/__pycache__/": true,
+        "**/_venv/": true,
+        "**/*.pyc": true
+    }
 }
