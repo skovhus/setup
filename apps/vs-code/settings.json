@@ -13,9 +13,8 @@
     "files.trimTrailingWhitespace": true,
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Monokai", // Monokai, Nord
+    "workbench.colorTheme": "Nord", // Monokai, Nord
     "workbench.editor.showTabs": true,
-    "workbench.welcome.enabled": false,
     "flow.useNPMPackagedFlow": true,
     "javascript.validate.enable": false,
     "eslint.validate": [
@@ -33,6 +32,14 @@
         "**/ios/build": true,
         "**/__pycache__/": true,
         "**/_venv/": true,
-        "**/*.pyc": true
-    }
+        "**/*.pyc": true,
+        "**/*.egg-info": true,
+        "**/coverage": true
+    },
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
 }

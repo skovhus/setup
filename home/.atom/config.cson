@@ -70,7 +70,7 @@
     pythonPath: "%p,%f"
     rcFile: "%p/pylint.cfg"
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 69
   nuclide:
     installRecommendedPackages: true
     "nuclide-code-format":
