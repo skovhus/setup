@@ -40,17 +40,21 @@ brew install gnu-sed
 brew install go
 brew install jq
 brew install make
-brew install mercurial
 brew install node
-brew install pstree
+brew install yarn
 brew install python
 brew install ruby
 brew install scala
+brew install wget
+
+# Install other brew packages
+echo "> Installing other brew package..."
+brew tap caskroom/fonts
+brew cask install font-fira-code
+brew install pstree
 brew install the_silver_searcher
 brew install tree
 brew install watchman
-brew install wget
-brew install yarn
 
 # up the limit for files opened
 sudo launchctl limit maxfiles 2048 unlimited
