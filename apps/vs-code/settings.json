@@ -21,7 +21,15 @@
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        "typescript"
+        "typescript",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
     ],
     "files.exclude": {
         "**/.git": true,
@@ -43,8 +51,9 @@
     "editor.formatOnPaste": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "jest.enableInlineErrorMessages": false,
+    "editor.renderWhitespace": "all",
     "cSpell.userWords": [
         "titillium"
     ],
-    "jest.enableInlineErrorMessages": false
 }
