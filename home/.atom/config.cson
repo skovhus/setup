@@ -25,9 +25,8 @@
       ]
     disabledPackages: [
       "linter-tslint"
-      "flow-ide"
       "linter"
-      "tree-view"
+      "flow-ide"
     ]
     ignoredNames: [
       ".git"
