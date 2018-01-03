@@ -94,3 +94,5 @@ ssh-add -A 2>/dev/null;
 
 export ANDROID_HOME=/usr/local/share/android-sdk
 export ANDROID_HOME_SDK=/usr/local/share/android-sdk
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/Users/kenneth/Library/Android/sdk/platform-tools/:$PATH"

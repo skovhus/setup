@@ -1,7 +1,4 @@
 {
-    "cSpell.enabledLanguageIds": [
-        "markdown"
-    ],
     "editor.fontFamily": "Fira Code", // Menlo
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
@@ -13,7 +10,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Nord", // Monokai, Nord
     "workbench.editor.showTabs": true,
     "flow.useNPMPackagedFlow": true,
@@ -51,10 +48,13 @@
     "editor.formatOnPaste": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "jest.enableInlineErrorMessages": false,
     "editor.renderWhitespace": "all",
+    "tslint.autoFixOnSave": true,
+    "editor.tokenColorCustomizations": {
+        "comments": "#596377"
+    },
     "cSpell.userWords": [
-        "titillium"
+        "pharma"
     ],
     "editor.formatOnSave": true,
     "workbench.startupEditor": "newUntitledFile",
@@ -67,5 +67,8 @@
         "suppressNoRepositoryWarning": false,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    }
+    },
+    "jest.enableInlineErrorMessages": false,
+    "jest.autoEnable": false,
+    "jest.enableCodeLens": false
 }

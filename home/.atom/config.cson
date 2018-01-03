@@ -26,7 +26,8 @@
     disabledPackages: [
       "linter-tslint"
       "linter"
-      "flow-ide"
+      "nuclide"
+      "nuclide-format-js"
     ]
     ignoredNames: [
       ".git"
@@ -68,8 +69,7 @@
     executablePath: "%p/_venv/bin/pylint"
     pythonPath: "%p,%f"
     rcFile: "%p/pylint.cfg"
-  "linter-ui-default":
-    panelHeight: 69
+  "linter-ui-default": {}
   nuclide:
     installRecommendedPackages: true
     "nuclide-code-format":
