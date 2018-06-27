@@ -75,7 +75,6 @@ ln -fs $PWD/skovhus.zsh-theme ~/.oh-my-zsh/themes/skovhus.zsh-theme
 
 # Install Apps
 echo "> Installing Apps you will like..."
-brew cask install atom
 brew cask install docker
 brew cask install dropbox
 brew cask install flux
@@ -92,11 +91,6 @@ brew cask install spotify
 brew cask install sublime-text
 brew cask install vlc
 brew cask install visual-studio-code
-
-# Atom
-echo "> Setting up Atom..."
-apm install `cat apps/atom/atom-packages.list`
-ln -fs $PWD/home/.atom/config.cson ~/.atom
 
 # VS Code
 echo "> Setting up VS Code..."
