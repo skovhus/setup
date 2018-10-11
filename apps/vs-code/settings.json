@@ -11,7 +11,7 @@
     "files.trimTrailingWhitespace": true,
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Nord", // Monokai, Nord
+    "workbench.colorTheme": "Material Theme High Contrast", // Material Theme High Contrast, Nord
     "workbench.editor.showTabs": true,
     "flow.useNPMPackagedFlow": true,
     "javascript.validate.enable": false,
@@ -56,7 +56,7 @@
     "cSpell.userWords": [
         "pharma"
     ],
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "workbench.startupEditor": "newUntitledFile",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -70,5 +70,11 @@
     },
     "jest.enableInlineErrorMessages": false,
     "jest.autoEnable": false,
-    "jest.enableCodeLens": false
+    "jest.enableCodeLens": false,
+    "terminal.integrated.rendererType": "dom",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "materialTheme.fixIconsRunning": false,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "breadcrumbs.enabled": true
 }
