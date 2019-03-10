@@ -1,20 +1,51 @@
 {
+    "breadcrumbs.enabled": true,
     "editor.fontFamily": "Fira Code", // Menlo
     "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": false,
     "editor.renderLineHighlight": "none",
+    "editor.renderWhitespace": "all",
     "editor.scrollBeyondLastLine": false,
+    "editor.tabSize": 2,
     "eslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
     "eslint.run": "onSave",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "flow.useNPMPackagedFlow": true,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "javascript.validate.enable": false,
+    "jest.autoEnable": false,
+    "jest.enableCodeLens": false,
+    "jest.enableInlineErrorMessages": false,
+    "materialTheme.fixIconsRunning": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "tslint.autoFixOnSave": false,
+    "tslint.enable": false,
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Material Theme High Contrast", // Material Theme High Contrast, Nord
     "workbench.editor.showTabs": true,
-    "flow.useNPMPackagedFlow": true,
-    "javascript.validate.enable": false,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "cSpell.userWords": [
+        "pharma",
+        "truthy"
+    ],
+    "editor.tokenColorCustomizations": {
+        "comments": "#596377"
+    },
     "eslint.validate": [
         "javascript",
         "javascriptreact",
@@ -42,22 +73,6 @@
         "**/*.egg-info": true,
         "**/coverage": true
     },
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "editor.tabSize": 2,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "editor.renderWhitespace": "all",
-    "tslint.autoFixOnSave": true,
-    "editor.tokenColorCustomizations": {
-        "comments": "#596377"
-    },
-    "cSpell.userWords": [
-        "pharma",
-        "truthy"
-    ],
-    "workbench.startupEditor": "newUntitledFile",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -69,20 +84,5 @@
         "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    },
-    "jest.enableInlineErrorMessages": false,
-    "jest.autoEnable": false,
-    "jest.enableCodeLens": false,
-    "terminal.integrated.rendererType": "dom",
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "materialTheme.fixIconsRunning": false,
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "breadcrumbs.enabled": true,
-    "gitlens.historyExplorer.enabled": true,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "editor.formatOnSave": true,
-    "eslint.packageManager": "yarn",
-    "tslint.enable": false
+    }
 }
