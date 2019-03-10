@@ -54,9 +54,9 @@
         "comments": "#596377"
     },
     "cSpell.userWords": [
-        "pharma"
+        "pharma",
+        "truthy"
     ],
-    "editor.formatOnSave": false,
     "workbench.startupEditor": "newUntitledFile",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -78,5 +78,11 @@
     "materialTheme.fixIconsRunning": false,
     "workbench.iconTheme": "eq-material-theme-icons",
     "javascript.updateImportsOnFileMove.enabled": "never",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "editor.formatOnSave": true,
+    "eslint.packageManager": "yarn",
+    "tslint.enable": false
 }

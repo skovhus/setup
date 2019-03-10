@@ -5,7 +5,6 @@ arcticicestudio.nord-visual-studio-code
 bajdzis.vscode-database
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
-eg2.tslint
 flowtype.flow-for-vscode
 freebroccolo.reasonml
 hdg.live-html-previewer
@@ -22,6 +21,4 @@ ms-vscode.atom-keybindings
 ms-vscode.azure-account
 patrys.vscode-code-outline
 qub.qub-xml-vscode
-sbrink.elm
 streetsidesoftware.code-spell-checker
-wix.vscode-import-cost
