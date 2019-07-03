@@ -2,8 +2,6 @@
     "breadcrumbs.enabled": true,
     "editor.fontFamily": "Fira Code", // Menlo
     "editor.fontLigatures": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": false,
@@ -12,8 +10,6 @@
     "editor.scrollBeyondLastLine": false,
     "editor.tabSize": 2,
     "eslint.autoFixOnSave": true,
-    "eslint.packageManager": "yarn",
-    "eslint.run": "onSave",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "flow.useNPMPackagedFlow": true,
@@ -34,8 +30,8 @@
     "tslint.autoFixOnSave": false,
     "tslint.enable": false,
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Material Theme High Contrast", // Material Theme High Contrast, Nord
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Ayu Light Bordered", // Material Theme High Contrast, Nord
     "workbench.editor.showTabs": true,
     "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.startupEditor": "newUntitledFile",
@@ -47,15 +43,20 @@
         "comments": "#596377"
     },
     "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
+        {
+            "language": "javascript",
+            "autoFix": true
+        },
         {
             "language": "typescript",
             "autoFix": true
         },
         {
             "language": "typescriptreact",
+            "autoFix": true
+        },
+        {
+            "language": "vue",
             "autoFix": true
         }
     ],
@@ -84,5 +85,13 @@
         "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    }
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "atomKeymap.promptV3Features": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "eslint.alwaysShowStatus": true,
+    "materialTheme.accent": "Tomato",
+    "workbench.statusBar.visible": false,
+    "python.jediEnabled": false
 }
