@@ -1,5 +1,13 @@
 {
+    "atomKeymap.promptV3Features": true,
     "breadcrumbs.enabled": true,
+    "cSpell.userWords": [
+        "pharma",
+        "truthy"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "editor.fontFamily": "Fira Code", // Menlo
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
@@ -8,58 +16,12 @@
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "all",
     "editor.scrollBeyondLastLine": false,
+    "editor.suggestSelection": "first",
     "editor.tabSize": 2,
-    "eslint.autoFixOnSave": true,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "flow.useNPMPackagedFlow": true,
-    "gitlens.historyExplorer.enabled": true,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "javascript.validate.enable": false,
-    "jest.autoEnable": false,
-    "jest.enableCodeLens": false,
-    "jest.enableInlineErrorMessages": false,
-    "materialTheme.fixIconsRunning": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "tslint.autoFixOnSave": false,
-    "tslint.enable": false,
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Ayu Light Bordered", // Material Theme High Contrast, Nord
-    "workbench.editor.showTabs": true,
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "workbench.startupEditor": "newUntitledFile",
-    "cSpell.userWords": [
-        "pharma",
-        "truthy"
-    ],
     "editor.tokenColorCustomizations": {
         "comments": "#596377"
     },
-    "eslint.validate": [
-        {
-            "language": "javascript",
-            "autoFix": true
-        },
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-        {
-            "language": "typescriptreact",
-            "autoFix": true
-        },
-        {
-            "language": "vue",
-            "autoFix": true
-        }
-    ],
+    "eslint.alwaysShowStatus": true,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -74,24 +36,28 @@
         "**/*.egg-info": true,
         "**/coverage": true
     },
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": false,
-        "suppressWelcomeNotice": true
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "atomKeymap.promptV3Features": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "eslint.alwaysShowStatus": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "flow.useNPMPackagedFlow": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "javascript.implicitProjectConfig.checkJs": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "javascript.validate.enable": false,
     "materialTheme.accent": "Tomato",
-    "workbench.statusBar.visible": false,
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "tslint.autoFixOnSave": false,
+    "tslint.enable": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Ayu Light Bordered", // Material Theme High Contrast, Nord
+    "workbench.editor.showTabs": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.visible": true
+
 }
