@@ -96,3 +96,13 @@ export ANDROID_HOME=/Users/kenneth/Library/Android/sdk
 export ANDROID_HOME_SDK=$ANDROID_HOME
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools/:$PATH"
+export PATH="/Users/kenneth/Library/Python/3.7/bin:$PATH"
+export PATH="/Users/kenneth/bin:$PATH"
+
+export CLOUDSDK_PYTHON=/usr/local/bin/python3
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kenneth/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kenneth/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/completion.zsh.inc'; fi
