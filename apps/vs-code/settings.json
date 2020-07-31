@@ -7,8 +7,7 @@
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    },
-    "editor.fontFamily": "Fira Code", // Menlo
+    }, // Menlo
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -34,14 +33,17 @@
         "**/_venv/": true,
         "**/*.pyc": true,
         "**/*.egg-info": true,
-        "**/coverage": true
+        "**/coverage": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "flow.useNPMPackagedFlow": true,
     "java.errors.incompleteClasspath.severity": "ignore",
     "javascript.implicitProjectConfig.checkJs": true,
-    "javascript.updateImportsOnFileMove.enabled": "never",
     "javascript.validate.enable": false,
     "materialTheme.accent": "Tomato",
     "python.jediEnabled": false,
@@ -58,6 +60,16 @@
     "workbench.colorTheme": "Ayu Light Bordered", // Material Theme High Contrast, Nord
     "workbench.editor.showTabs": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "editor.semanticHighlighting.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "java.semanticHighlighting.enabled": true,
+    "editor.find.globalFindClipboard": true,
+    "editor.fontFamily": "Fira code",
+    "python.languageServer": "Microsoft",
+    "python.linting.flake8Path": "pylint",
+    "cSpell.enableFiletypes": [
+        "makefile"
+    ]
 
 }
