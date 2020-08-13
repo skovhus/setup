@@ -21,15 +21,6 @@ then
   brew doctor
 fi
 
-# Install latest zsh and oh-my-zsh
-OMZ=~/.oh-my-zsh
-if test ! -d $OMZ
-then
-  echo "> Installing oh my zsh..."
-  brew install zsh
-  curl -L http://install.ohmyz.sh | sh
-fi
-
 
 # up the limit for files opened
 sudo launchctl limit maxfiles 2048 unlimited
@@ -37,47 +28,25 @@ sudo launchctl limit maxfiles 2048 unlimited
 echo "> Brew: updating and upgrading..."
 brew update
 brew upgrade
+brew tap homebrew/cask-fonts
 
 
-echo "> Brew: Installing common sanity..."
-brew update
-brew upgrade
-brew install coreutils
-brew install curl
-brew install git
-brew install gnu-sed
-brew install jq
-brew install make
-brew install node
-brew install yarn
-brew install python
-brew install ruby
+echo "> Brew: tapping..."
+for module in `cat brew-packages.list`; do
+    brew install "$module" || true
+done
 
+for module in `cat brew-casks.list`; do
+    brew cask install "$module" || true
+done
 
-echo "> Brew: Installing apps and packages..."
-brew cask install docker
-brew cask install dropbox
-brew cask install flux
-brew cask install font-fira-code
-brew cask install google-chrome
-brew cask install java
-brew cask install jumpcut
-brew cask install licecap
-brew cask install moom
-brew cask install mysql-utilities
-brew cask install mysqlworkbench
-brew cask install omnigraffle
-brew cask install postico
-brew cask install spotify
-brew cask install visual-studio-code
-brew cask install vlc
-brew install awscli
-brew install pstree
-brew install the_silver_searcher
-brew install tree
-brew install watchman
-brew install wget
-brew tap caskroom/fonts
+# Install oh-my-zsh
+OMZ=~/.oh-my-zsh
+if test ! -d $OMZ
+then
+  echo "> Installing oh my zsh..."
+  curl -L http://install.ohmyz.sh | sh
+fi
 
 
 echo "> Install python packages..."
