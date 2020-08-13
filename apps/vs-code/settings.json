@@ -7,7 +7,7 @@
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }, // Menlo
+    },
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",

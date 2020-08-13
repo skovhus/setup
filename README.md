@@ -7,7 +7,7 @@
 
 I usually configure a new machine by running:
 
-    ./install.sh
+    bash install.sh
 
 
 
