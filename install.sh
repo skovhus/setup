@@ -11,7 +11,7 @@ set -euo pipefail
 echo "> Setting up OS X..."
 ./OSXsettings.sh
 
-sudo xcode-select --install
+sudo xcode-select --install || true
 
 # Install homebrew
 if test ! $(which brew)
@@ -74,13 +74,20 @@ for module in `cat apps/vs-code/extensions.list`; do
     code --install-extension "$module" || true
 done
 
+
+echo "> Setup final OS X settings"
+
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Jumpcut.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Moom.app", hidden:false}'
+
+
 echo "> Done!"
 
 echo "-----------------------------------------"
 echo "Manual steps:"
 echo "-----------------------------------------"
-echo "- Setup terminal to import solarized-dark.terminal profile, with Menlo Regular 10pt and block cursor."
+echo "- Setup terminal to import solarized.terminal profile
 echo "- add e-mail to ~/.gitconfig"
 echo "- Fix all issues from running brew doctor"
 echo "- Set up short cuts http://apple.stackexchange.com/questions/167967/creating-system-wide-keyboard-shortcut-to-launch-applications"
-echo "- Configure moom, jumpcut to start, etc..."
+echo "- Configure moom, log in to Dropbox, Chrome..."

@@ -96,8 +96,8 @@ export ANDROID_HOME=/Users/kenneth/Library/Android/sdk
 export ANDROID_HOME_SDK=$ANDROID_HOME
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools/:$PATH"
-export PATH="/Users/kenneth/Library/Python/3.7/bin:$PATH"
 export PATH="/Users/kenneth/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 export CLOUDSDK_PYTHON=/usr/local/bin/python3
 

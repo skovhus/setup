@@ -24,16 +24,16 @@ killall Dock
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write -g KeyRepeat -int 1
 
 # Set a shorter Delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write -g InitialKeyRepeat -int 15
 
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
 # Add a context menu item for showing the Web Inspector in web views
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+defaults write -g WebKitDeveloperExtras -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
