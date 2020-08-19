@@ -38,5 +38,12 @@ defaults write -g WebKitDeveloperExtras -bool true
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+# Disable interface sounds and alerts
+defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -int 0
+defaults write com.apple.systemsound com.apple.sound.beep.volume -float 0
+
+# Trackpad: Tap to click
+defaults write -g com.apple.mouse.tapBehavior -int 1
+
 # No desktop, I just put garbage there...
 defaults write com.apple.finder CreateDesktop -bool FALSE;killall Finder
