@@ -1,75 +1,131 @@
 {
-    "atomKeymap.promptV3Features": true,
-    "breadcrumbs.enabled": true,
-    "cSpell.userWords": [
-        "pharma",
-        "truthy"
-    ],
+  "atomKeymap.promptV3Features": true,
+  "breadcrumbs.enabled": true,
+  "cSpell.userWords": ["pharma", "truthy"],
+  "cSpell.enableFiletypes": [
+    "!javascript",
+    "!json",
+    "!markdown",
+    "!plaintext",
+    "!python",
+    "makefile"
+  ],
+  "eslint.codeActionsOnSave.mode": "problems",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.find.globalFindClipboard": true,
+  "editor.fontFamily": "Fira code",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "editor.tokenColorCustomizations": {
+    "comments": "#596377"
+  },
+  "editor.semanticHighlighting.enabled": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/android/app/build": true,
+    "**/ios/build": true,
+    "**/__pycache__/": true,
+    "**/_venv/": true,
+    "**/*.pyc": true,
+    "**/*.egg-info": true,
+    "**/coverage": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": false,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "materialTheme.accent": "Tomato",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "pylint",
+  "python.linting.pylintEnabled": false,
+  "python.sortImports.path": "isort",
+  "python.sortImports.args": [
+    "--profile=black",
+    "--project=electricitymap",
+    "--known-local-folder=src"
+  ],
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "tslint.autoFixOnSave": false,
+  "tslint.enable": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.editor.untitled.hint": "hidden",
+  // "workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
+  "workbench.colorTheme": "Material Theme High Contrast",
+  "workbench.editor.showTabs": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "cSpell.enabled": true,
+  "sqltools.format": {
+    "linesBetweenQueries": 2
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.renderIndentGuides": false,
-    "editor.renderLineHighlight": "none",
-    "editor.renderWhitespace": "all",
-    "editor.scrollBeyondLastLine": false,
-    "editor.suggestSelection": "first",
-    "editor.tabSize": 2,
-    "editor.tokenColorCustomizations": {
-        "comments": "#596377"
-    },
-    "eslint.alwaysShowStatus": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/android/app/build": true,
-        "**/ios/build": true,
-        "**/__pycache__/": true,
-        "**/_venv/": true,
-        "**/*.pyc": true,
-        "**/*.egg-info": true,
-        "**/coverage": true,
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "flow.useNPMPackagedFlow": true,
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "javascript.implicitProjectConfig.checkJs": true,
-    "javascript.validate.enable": false,
-    "materialTheme.accent": "Tomato",
-    "python.jediEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-    "tslint.autoFixOnSave": false,
-    "tslint.enable": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Ayu Light Bordered", // Material Theme High Contrast, Nord
-    "workbench.editor.showTabs": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": true,
-    "editor.semanticHighlighting.enabled": true,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "java.semanticHighlighting.enabled": true,
-    "editor.find.globalFindClipboard": true,
-    "editor.fontFamily": "Fira code",
-    "python.languageServer": "Microsoft",
-    "python.linting.flake8Path": "pylint",
-    "cSpell.enableFiletypes": [
-        "makefile"
-    ]
-
+      "editor.formatOnSave": true,
+      "source.organizeImports": true
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

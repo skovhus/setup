@@ -53,7 +53,10 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 alias ls='ls -lah'
 
-export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/Cellar/node/7.4.0/bin:$PATH
+alias proxy_db_bloom="cloud_sql_proxy -instances=tmrowapp:europe-west1:postgres-v13=tcp:5432"
+alias proxy_db_emap="cloud_sql_proxy -instances=tmrow-152415:europe-west1:pgdb=tcp:5432"
+
+export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH
 export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -100,9 +103,26 @@ export PATH="/Users/kenneth/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
 export CLOUDSDK_PYTHON=/usr/local/bin/python3
+export PATH="/usr/local/opt/node@14/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kenneth/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kenneth/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# Pillow/psycopg2
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
