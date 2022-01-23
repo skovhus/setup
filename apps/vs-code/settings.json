@@ -127,5 +127,7 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.inlineSuggest.enabled": true,
+  "debug.javascript.autoAttachFilter": "disabled"
 }

@@ -1,7 +1,9 @@
+# Almost like Simple
 SKOVHUS_COLOR_BASE="%{$fg[green]%}"
 SKOVHUS_COLOR_GIT="%{$fg[blue]%}"
 
-PROMPT='$SKOVHUS_COLOR_BASE%~$SKOVHUS_COLOR_GIT$(git_prompt_info)%{$reset_color%} '
+# 2~ shows the current and the parent folder
+PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})%2~%{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]"
