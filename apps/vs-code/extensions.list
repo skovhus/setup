@@ -2,6 +2,7 @@ alefragnani.project-manager
 apollographql.vscode-apollo
 arcticicestudio.nord-visual-studio-code
 bajdzis.vscode-database
+ban.spellright
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
 dragos.scala-lsp
@@ -9,15 +10,16 @@ eg2.tslint
 Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
+esbenp.prettier-vscode
 flowtype.flow-for-vscode
+hashicorp.terraform
 hdg.live-html-previewer
 himanoa.Python-autopep8
 hnw.vscode-auto-open-markdown-preview
 howardzuo.vscode-git-blamer
-itryapitsin.Scala
 James-Yu.latex-workshop
 jaredly.reason-vscode
-jpoissonnier.vscode-styled-components
+jasonnutter.vscode-codeowners
 jspolancor.presentationmode
 kumar-harsh.graphql-for-vscode
 mads-hartmann.bash-ide-vscode
@@ -26,13 +28,14 @@ mikestead.dotenv
 moppitz.vscode-extension-auto-import
 ms-azuretools.vscode-docker
 ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 ms-vscode.atom-keybindings
 ms-vscode.azure-account
 ms-vsliveshare.vsliveshare
 msjsdiag.vscode-react-native
 octref.vetur
-patrys.vscode-code-outline
 qub.qub-xml-vscode
 redhat.java
 sbrink.elm
@@ -40,6 +43,8 @@ scala-lang.scala
 sdras.night-owl
 streetsidesoftware.code-spell-checker
 streetsidesoftware.code-spell-checker-medical-terms
+styled-components.vscode-styled-components
+stylelint.vscode-stylelint
 teabyii.ayu
 timonwong.shellcheck
 VisualStudioExptTeam.vscodeintellicode
@@ -50,3 +55,4 @@ vscjava.vscode-java-test
 vscjava.vscode-maven
 wix.vscode-import-cost
 zhouronghui.propertylist
+ZixuanChen.vitest-explorer

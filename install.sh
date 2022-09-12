@@ -6,6 +6,7 @@
 # - https://github.com/mads-hartmann/dotfiles
 
 set -euo pipefail
+set -e
 
 # Set up OSX settings
 echo "> Setting up OS X..."
@@ -37,7 +38,7 @@ for module in `cat brew-packages.list`; do
 done
 
 for module in `cat brew-casks.list`; do
-    brew cask install "$module" || true
+    brew install --cask "$module" || true
 done
 
 # Install oh-my-zsh
@@ -90,4 +91,5 @@ echo "- Setup terminal to import solarized.terminal profile
 echo "- add e-mail to ~/.gitconfig"
 echo "- Fix all issues from running brew doctor"
 echo "- Set up short cuts http://apple.stackexchange.com/questions/167967/creating-system-wide-keyboard-shortcut-to-launch-applications"
+echo "- Install Moom from App Store"
 echo "- Configure moom, log in to Dropbox, Chrome..."

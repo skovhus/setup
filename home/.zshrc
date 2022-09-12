@@ -124,5 +124,23 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export GPG_TTY=$(tty)
+
+# nvm version
+nvm use 16
+
+export PNPM_HOME="/Users/kenneth/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+# Pleo stuff
+
+export PATH="$PATH:/Users/kenneth/git/terraform/bin"
+
+# bun completions
+[ -s "/Users/kenneth/.bun/_bun" ] && source "/Users/kenneth/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/Users/kenneth/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

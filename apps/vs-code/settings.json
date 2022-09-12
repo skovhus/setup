@@ -20,7 +20,6 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "all",
   "editor.scrollBeyondLastLine": false,
@@ -75,14 +74,14 @@
     "--project=electricitymap",
     "--known-local-folder=src"
   ],
-  "redhat.telemetry.enabled": false,
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "tslint.autoFixOnSave": false,
   "tslint.enable": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.referencesCodeLens.enabled": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.editor.untitled.hint": "hidden",
-  // "workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
+  //"workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
   "workbench.colorTheme": "Material Theme High Contrast",
   "workbench.editor.showTabs": true,
   "workbench.startupEditor": "newUntitledFile",
@@ -112,11 +111,15 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -129,5 +132,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.inlineSuggest.enabled": true,
-  "debug.javascript.autoAttachFilter": "disabled"
+  "debug.javascript.autoAttachFilter": "disabled",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.indentation": false,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  }
 }
