@@ -1,19 +1,15 @@
 ansifilter
 awscli
-bash-language-server
 cloc
 cmake
 coreutils
 curl
 cython
-diff-so-fancy
-drone/drone/drone
 ffmpeg
 gh
 git
 gnu-sed
 gnupg
-gnupg@1.4
 gobject-introspection
 graphviz
 grep
@@ -22,7 +18,7 @@ kubectx
 make
 mas
 mkcert
-node@14
+node
 nss
 nvm
 openjdk
@@ -30,7 +26,6 @@ openssl@3
 pinentry-mac
 pipenv
 pnpm
-postgresql
 pre-commit
 pstree
 pyenv
@@ -46,4 +41,3 @@ tree
 watchman
 wget
 yarn
-zlib

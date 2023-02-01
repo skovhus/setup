@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euxo pipefail
 
 # Enable repeat on keydown
 defaults write -g ApplePressAndHoldEnabled -bool false
