@@ -18,7 +18,6 @@
   "editor.fontFamily": "Fira code",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "all",
@@ -137,5 +136,10 @@
   "editor.guides.indentation": false,
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
-  }
+  },
+  "editor.minimap.enabled": false,
+  "bashIde.logLevel": "debug",
+  "react-native-tools.showUserTips": false,
+  "debug.onTaskErrors": "debugAnyway",
+  "bashIde.includeAllWorkspaceSymbols": true
 }

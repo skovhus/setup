@@ -144,3 +144,4 @@ export PATH="$PATH:/Users/kenneth/git/terraform/bin"
 # Bun
 export BUN_INSTALL="/Users/kenneth/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
