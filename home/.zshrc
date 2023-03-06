@@ -44,7 +44,7 @@ plugins=(brew docker git yarn)
 
 source $ZSH/oh-my-zsh.sh
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=($ZSH/completions $fpath)
 
 
 # =========================================
@@ -52,9 +52,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # =========================================
 
 alias ls='ls -lah'
-
-alias proxy_db_bloom="cloud_sql_proxy -instances=tmrowapp:europe-west1:postgres-v13=tcp:5432"
-alias proxy_db_emap="cloud_sql_proxy -instances=tmrow-152415:europe-west1:pgdb=tcp:5432"
 
 export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH
 export CLICOLOR=1
@@ -95,21 +92,21 @@ bindkey -s "^[OX" "="
 # sierra and ssh
 ssh-add -A 2>/dev/null;
 
-export ANDROID_HOME=/Users/kenneth/Library/Android/sdk
+export ANDROID_HOME=/Users/kenneth.skovhus/Library/Android/sdk
 export ANDROID_HOME_SDK=$ANDROID_HOME
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools/:$PATH"
-export PATH="/Users/kenneth/bin:$PATH"
+export PATH="/Users/kenneth.skovhus/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
 export CLOUDSDK_PYTHON=/usr/local/bin/python3
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kenneth/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/kenneth.skovhus/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenneth.skovhus/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/kenneth/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/kenneth.skovhus/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenneth.skovhus/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
@@ -117,11 +114,11 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
+# Pyenv (disabled for performance reasons)
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -131,17 +128,13 @@ export GPG_TTY=$(tty)
 # nvm version
 nvm use 16
 
-export PNPM_HOME="/Users/kenneth/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-
-# Pleo stuff
-
-export PATH="$PATH:/Users/kenneth/git/terraform/bin"
-
-# bun completions
-[ -s "/Users/kenneth/.bun/_bun" ] && source "/Users/kenneth/.bun/_bun"
-
 # Bun
-export BUN_INSTALL="/Users/kenneth/.bun"
+[ -s "/Users/kenneth.skovhus/.bun/_bun" ] && source "/Users/kenneth.skovhus/.bun/_bun"
+export BUN_INSTALL="/Users/kenneth.skovhus/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/kenneth.skovhus/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

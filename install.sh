@@ -50,6 +50,7 @@ then
   echo "> Installing oh my zsh..."
   curl -L http://install.ohmyz.sh | sh
 fi
+mkdir -p $OMZ/completions
 
 
 echo "$PREFIX Install global python packages..."

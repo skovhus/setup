@@ -17,7 +17,6 @@
   "editor.find.globalFindClipboard": true,
   "editor.fontFamily": "Fira code",
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "all",
@@ -106,7 +105,8 @@
     "editor.codeActionsOnSave": {
       "editor.formatOnSave": true,
       "source.organizeImports": true
-    }
+    },
+    "editor.formatOnType": true
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -141,5 +141,13 @@
   "bashIde.logLevel": "debug",
   "react-native-tools.showUserTips": false,
   "debug.onTaskErrors": "debugAnyway",
-  "bashIde.includeAllWorkspaceSymbols": true
+  "git.openRepositoryInParentFolders": "always",
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
+  },
+  "redhat.telemetry.enabled": false,
+  "files.associations": {
+    "*.json5": "jsonc"
+  },
+  "editor.accessibilitySupport": "off"
 }
