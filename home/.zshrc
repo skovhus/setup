@@ -52,7 +52,7 @@ fpath=($ZSH/completions $fpath)
 # =========================================
 
 alias ls='ls -lah'
-
+alias p=pnpm
 export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH
 export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
@@ -126,7 +126,7 @@ export NVM_DIR="$HOME/.nvm"
 export GPG_TTY=$(tty)
 
 # nvm version
-nvm use 16
+nvm use 20
 
 # Bun
 [ -s "/Users/kenneth.skovhus/.bun/_bun" ] && source "/Users/kenneth.skovhus/.bun/_bun"
@@ -136,5 +136,19 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/kenneth.skovhus/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
+
+# prevent yarn from running in non-yarn projects
+yarn() {
+  if [ -e package-lock.lock ]; then
+    echo "⚠️  This is a npm project. Why don't you use "npm" ⁉️"
+  elif [ -e pnpm-lock.yaml ]; then
+    echo "⚠️  This is a pnpm project. Why don't you use "pnpm" ⁉️"
+  else
+    command yarn $@
+  fi
+}

@@ -1,7 +1,7 @@
 Some files are maintained manually:
 
-    code --list-extensions > apps/vs-code/extensions.list
+    code --list-extensions | sort --ignore-case > apps/vs-code/extensions.list
 
-    brew list --cask -1 > brew-casks.list
+    brew list --cask -1 | sort --ignore-case > brew-casks.list
 
-    brew leaves > brew-packages.list
+    brew leaves | sort --ignore-case > brew-packages.list

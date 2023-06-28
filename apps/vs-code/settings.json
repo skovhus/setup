@@ -1,7 +1,49 @@
 {
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "editor.formatOnSave": true,
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
   "atomKeymap.promptV3Features": true,
+  "bashIde.logLevel": "debug",
   "breadcrumbs.enabled": true,
-  "cSpell.userWords": ["pharma", "truthy"],
   "cSpell.enableFiletypes": [
     "!javascript",
     "!json",
@@ -10,47 +52,70 @@
     "!python",
     "makefile"
   ],
-  "eslint.codeActionsOnSave.mode": "problems",
+  "cSpell.enabled": true,
+  "cSpell.userWords": [
+    "pharma",
+    "truthy"
+  ],
+  "debug.javascript.autoAttachFilter": "disabled",
+  "debug.onTaskErrors": "debugAnyway",
+  "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": false
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.globalFindClipboard": true,
   "editor.fontFamily": "Fira code",
   "editor.fontLigatures": true,
+  "editor.guides.indentation": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "all",
   "editor.scrollBeyondLastLine": false,
+  "editor.semanticHighlighting.enabled": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  "eslint.format.enable": true,
   "editor.tokenColorCustomizations": {
     "comments": "#596377"
   },
-  "editor.semanticHighlighting.enabled": true,
   "eslint.alwaysShowStatus": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
+  "files.associations": {
+    "*.json5": "jsonc"
+  },
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/android/app/build": true,
-    "**/ios/build": true,
-    "**/__pycache__/": true,
-    "**/_venv/": true,
-    "**/*.pyc": true,
     "**/*.egg-info": true,
-    "**/coverage": true,
+    "**/*.pyc": true,
+    "**/.DS_Store": true,
     "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.git": true,
+    "**/.hg": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/__pycache__/": true,
+    "**/_venv/": true,
+    "**/android/app/build": true,
+    "**/coverage": true,
+    "**/ios/build": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false,
+    "yaml": false
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
   "js/ts.implicitProjectConfig.checkJs": true,
@@ -66,88 +131,34 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "pylint",
   "python.linting.pylintEnabled": false,
-  "python.sortImports.path": "isort",
   "python.sortImports.args": [
     "--profile=black",
     "--project=electricitymap",
     "--known-local-folder=src"
   ],
-  "tslint.autoFixOnSave": false,
-  "tslint.enable": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.editor.untitled.hint": "hidden",
-  //"workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
-  "workbench.colorTheme": "Material Theme High Contrast",
-  "workbench.editor.showTabs": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "[sql]": {
-    "editor.defaultFormatter": "mtxr.sqltools"
-  },
-  "cSpell.enabled": true,
+  "python.sortImports.path": "isort",
+  "react-native-tools.showUserTips": false,
+  "redhat.telemetry.enabled": false,
   "sqltools.format": {
     "linesBetweenQueries": 2
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.codeActionsOnSave": {
-      "editor.formatOnSave": true,
-      "source.organizeImports": true
-    },
-    "editor.formatOnType": true
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "tslint.autoFixOnSave": false,
+  "tslint.enable": false,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  //"workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
+  "workbench.colorTheme": "Material Theme High Contrast",
+  "workbench.editor.showTabs": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.inlineSuggest.enabled": true,
-  "debug.javascript.autoAttachFilter": "disabled",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.guides.indentation": false,
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
-  },
-  "editor.minimap.enabled": false,
-  "bashIde.logLevel": "debug",
-  "react-native-tools.showUserTips": false,
-  "debug.onTaskErrors": "debugAnyway",
-  "git.openRepositoryInParentFolders": "always",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true,
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
-  },
-  "redhat.telemetry.enabled": false,
-  "files.associations": {
-    "*.json5": "jsonc"
-  },
-  "editor.accessibilitySupport": "off"
+  }
 }
