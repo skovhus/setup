@@ -11,7 +11,8 @@ PREFIX='>'
 
 # Set up OS settings
 echo "$PREFIX Setting up OS settings..."
-./mac-os-settings.sh
+./mac-os/configure-macos.sh
+./mac-os/configure-dock.sh
 
 sudo xcode-select --install || true
 
@@ -62,8 +63,18 @@ echo "$PREFIX Setup symlinks for dotfiles and shell stuff..."
 ln -fs $PWD/home/.zshrc ~
 ln -fs $PWD/home/.ssh/config ~/.ssh
 
+# install node 20
+nvm install v20
+
+# install poetry
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Install bun
+curl -fsSL https://bun.sh/install | bash
+bun completions
+
 # move .gitconfig without e-mail
-cp home/.gitconfig ~
+cp ./home/.gitconfig ~
 
 # And oh my zsh theme
 mkdir -p ~/.oh-my-zsh/themes/
@@ -85,8 +96,9 @@ echo "-----------------------------------------"
 echo "Manual steps:"
 echo "-----------------------------------------"
 echo "- Setup terminal to import solarized.terminal profile"
-echo "- add e-mail to ~/.gitconfig"
+echo "- Add e-mail to ~/.gitconfig"
 echo "- Fix all issues from running brew doctor"
+echo "- Restart"
 echo "- Set up short cuts http://apple.stackexchange.com/questions/167967/creating-system-wide-keyboard-shortcut-to-launch-applications"
 echo "- Install Moom from App Store"
-echo "- Configure moom, log in to Dropbox, Chrome..."
+echo "- Configure moom, log in to Dropbox, Chrome, jumpcut, raycast..."

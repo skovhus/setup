@@ -40,7 +40,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker git yarn)
+plugins=(brew docker git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,16 +53,20 @@ fpath=($ZSH/completions $fpath)
 
 alias ls='ls -lah'
 alias p=pnpm
-export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:$PATH
+
+export PATH=$HOME/bin:$PATH
 export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Configure brew shell
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='code'
+  export EDITOR='code'
 else
-    export EDITOR='nano'
+  export EDITOR='nano'
 fi
 
 # Keypad
@@ -89,58 +93,30 @@ bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 bindkey -s "^[OX" "="
 
-# sierra and ssh
-ssh-add -A 2>/dev/null;
+# poetry / python
+export PATH="$HOME/.local/bin:$PATH"
 
-export ANDROID_HOME=/Users/kenneth.skovhus/Library/Android/sdk
-export ANDROID_HOME_SDK=$ANDROID_HOME
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="$ANDROID_HOME/platform-tools/:$PATH"
-export PATH="/Users/kenneth.skovhus/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
-export CLOUDSDK_PYTHON=/usr/local/bin/python3
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kenneth.skovhus/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenneth.skovhus/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/kenneth.skovhus/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenneth.skovhus/google-cloud-sdk/completion.zsh.inc'; fi
-
-export PATH="$HOME/.poetry/bin:$PATH"
-
-# Pillow/psycopg2
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-
-# Pyenv (disabled for performance reasons)
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init --path)"
-# eval "$(pyenv init -)"
-
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-export GPG_TTY=$(tty)
-
-# nvm version
-nvm use 20
-
-# Bun
-[ -s "/Users/kenneth.skovhus/.bun/_bun" ] && source "/Users/kenneth.skovhus/.bun/_bun"
-export BUN_INSTALL="/Users/kenneth.skovhus/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+nvm use 20 --silent
 
 # pnpm
-export PNPM_HOME="/Users/kenneth.skovhus/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+# Commit signing
+export GPG_TTY=$(tty)
+
+# Bun
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # prevent yarn from running in non-yarn projects
 yarn() {
@@ -152,3 +128,6 @@ yarn() {
     command yarn $@
   fi
 }
+
+# bun completions
+[ -s "/Users/kenneth/.bun/_bun" ] && source "/Users/kenneth/.bun/_bun"

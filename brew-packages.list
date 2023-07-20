@@ -5,7 +5,6 @@ bash-completion
 cloc
 cmake
 cmocka
-colima
 coreutils
 curl
 cython
