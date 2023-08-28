@@ -24,7 +24,7 @@
     "editor.formatOnType": true
   },
   "[sql]": {
-    "editor.defaultFormatter": "mtxr.sqltools"
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
@@ -41,7 +41,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
   },
-  "atomKeymap.promptV3Features": true,
   "bashIde.logLevel": "debug",
   "breadcrumbs.enabled": true,
   "cSpell.enableFiletypes": [
@@ -61,7 +60,7 @@
   "debug.onTaskErrors": "debugAnyway",
   "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
+    "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.globalFindClipboard": true,
@@ -80,10 +79,7 @@
   "editor.tokenColorCustomizations": {
     "comments": "#596377"
   },
-  "eslint.alwaysShowStatus": true,
-  "eslint.codeActionsOnSave.mode": "problems",
-  "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
+//  "eslint.codeActionsOnSave.mode": "problems",
   "files.associations": {
     "*.json5": "jsonc"
   },
@@ -126,25 +122,13 @@
     "jupyter-notebook": "left"
   },
   "python.analysis.typeCheckingMode": "basic",
-  "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "pylint",
-  "python.linting.pylintEnabled": false,
-  "python.sortImports.args": [
-    "--profile=black",
-    "--project=electricitymap",
-    "--known-local-folder=src"
-  ],
-  "python.sortImports.path": "isort",
   "react-native-tools.showUserTips": false,
   "redhat.telemetry.enabled": false,
   "sqltools.format": {
     "linesBetweenQueries": 2
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "tslint.autoFixOnSave": false,
-  "tslint.enable": false,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -160,5 +144,6 @@
   "workbench.statusBar.visible": true,
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": "/.github/workflows/*.yml"
-  }
+  },
+  "sql-formatter.uppercase": true
 }
