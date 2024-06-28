@@ -1,4 +1,30 @@
 [
-    { "key": "alt+up", "command": "editor.action.insertCursorAbove" },
-    { "key": "alt+down", "command": "editor.action.insertCursorBelow" }
+  { "key": "alt+up", "command": "editor.action.insertCursorAbove" },
+  { "key": "alt+down", "command": "editor.action.insertCursorBelow" },
+
+  ////////////////////////
+  // Terminal
+  ////////////////////////
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  // This enables closing terminal tabs when using the build-in terminal in the panel.
+  // The !terminalEditorFocus ensure that it doesn't interfere with the default system
+  // binding for closing terminals that are shown in editor groups.
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+f",
+    "command": "workbench.action.quickTextSearch"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  }
 ]

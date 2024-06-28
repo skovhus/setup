@@ -52,10 +52,7 @@
     "makefile"
   ],
   "cSpell.enabled": true,
-  "cSpell.userWords": [
-    "pharma",
-    "truthy"
-  ],
+  "cSpell.userWords": ["pharma", "truthy"],
   "debug.javascript.autoAttachFilter": "disabled",
   "debug.onTaskErrors": "debugAnyway",
   "editor.accessibilitySupport": "off",
@@ -66,6 +63,7 @@
   "editor.find.globalFindClipboard": true,
   "editor.fontFamily": "Fira code",
   "editor.fontLigatures": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.guides.indentation": false,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
@@ -79,7 +77,6 @@
   "editor.tokenColorCustomizations": {
     "comments": "#596377"
   },
-//  "eslint.codeActionsOnSave.mode": "problems",
   "files.associations": {
     "*.json5": "jsonc"
   },
@@ -129,11 +126,11 @@
     "linesBetweenQueries": 2
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  // "typescript.referencesCodeLens.enabled": true,
+  // "typescript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  //"workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
+  // "workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
   "workbench.colorTheme": "Material Theme High Contrast",
   "workbench.editor.showTabs": true,
   "workbench.editor.untitled.hint": "hidden",

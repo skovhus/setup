@@ -53,6 +53,9 @@ fpath=($ZSH/completions $fpath)
 
 alias ls='ls -lah'
 alias p=pnpm
+alias gu='git up'
+alias gcom='git commit -m'
+alias gco='git checkout'
 
 export PATH=$HOME/bin:$PATH
 export CLICOLOR=1
@@ -100,7 +103,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-nvm use 18 --silent
+nvm use 20 --silent
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -140,3 +143,11 @@ if [ -f '/Users/kenneth/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenneth
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kenneth/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenneth/google-cloud-sdk/completion.zsh.inc'; fi
+
+# pnpm
+export PNPM_HOME="/Users/kenneth/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
