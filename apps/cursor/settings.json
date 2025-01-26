@@ -1,0 +1,72 @@
+{
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "cSpell.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.find.globalFindClipboard": true,
+  "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "Berkeley Mono Variable",
+  "editor.fontLigatures": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.guides.indentation": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "selection",
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": {
+    "**/*.egg-info": true,
+    "**/*.pyc": true,
+    "**/.DS_Store": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/__pycache__/": true,
+    "**/_venv/": true,
+    "**/android/app/build": true,
+    "**/coverage": true,
+    "**/ios/build": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.openRepositoryInParentFolders": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsserver.maxTsServerMemory": 6000,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "window.commandCenter": 1,
+  "window.autoDetectColorScheme": true,
+  // "workbench.colorTheme": "Ayu Light Bordered", // Ayu Light Bordered, Material Theme High Contrast, Nord
+  "workbench.colorTheme": "Material Theme High Contrast", // Ayu Light Bordered
+  "workbench.preferredLightColorTheme": "Ayu Light Bordered",
+  "workbench.preferredDarkColorTheme": "Material Theme High Contrast",
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true
+}

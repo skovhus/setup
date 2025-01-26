@@ -85,8 +85,15 @@ echo "$PREFIX Setting up VS Code..."
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -fs $PWD/apps/vs-code/settings.json ~/Library/Application\ Support/Code/User
 ln -fs $PWD/apps/vs-code/keybindings.json ~/Library/Application\ Support/Code/User
-for module in `cat apps/vs-code/extensions.list`; do
+for module in $(cat apps/vs-code/extensions.list); do
     code --install-extension "$module" || true
+done
+
+echo "$PREFIX Setting up Cursor..."
+mkdir -p ~/Library/Application\ Support/Cursor/User
+ln -fs $PWD/apps/cursor/settings.json ~/Library/Application\ Support/Cursor/User
+for module in $(cat apps/cursor/extensions.list); do
+    cursor --install-extension "$module" || true
 done
 
 
