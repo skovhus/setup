@@ -92,6 +92,7 @@ done
 echo "$PREFIX Setting up Cursor..."
 mkdir -p ~/Library/Application\ Support/Cursor/User
 ln -fs $PWD/apps/cursor/settings.json ~/Library/Application\ Support/Cursor/User
+ln -fs $PWD/apps/vs-code/keybindings.json ~/Library/Application\ Support/Cursor/User
 for module in $(cat apps/cursor/extensions.list); do
     cursor --install-extension "$module" || true
 done
